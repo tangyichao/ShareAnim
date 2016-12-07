@@ -21,11 +21,17 @@ public class MainActivity extends AppCompatActivity {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              startActivity(new Intent(MainActivity.this,SecondActivity.class),
-                      ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,linearLayout,"shareAnim").toBundle());
-
-                startActivity(new Intent(MainActivity.this,SecondActivity.class),
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this,linearLayout,"shareAnim").toBundle());
+//                /*
+//                这个情况是不适用V7包的
+//                 */
+//              startActivity(new Intent(MainActivity.this,SecondActivity.class),
+//                      ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,linearLayout,"shareAnim").toBundle());
+//
+//                /*
+//                使用V7包
+//                 */
+//                startActivity(new Intent(MainActivity.this,SecondActivity.class),
+//                        ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this,linearLayout,"shareAnim").toBundle());
 
                 startActivity(new Intent(MainActivity.this,SecondActivity.class),
                         ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this,

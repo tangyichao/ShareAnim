@@ -22,7 +22,7 @@ public class SecondActivity extends AppCompatActivity {
         //内容共享
        // getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_second);
-       ActionBar actionBar= getSupportActionBar();
+        ActionBar actionBar= getSupportActionBar();
         if(actionBar!=null){
             actionBar.hide();
         }
