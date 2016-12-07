@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="shareAnim"
+        android:orientation="vertical"
+        android:background="@mipmap/iv_meinv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:transitionName="shareAnimTextView"
+        android:text="共享动画"
+        android:layout_gravity="bottom|center_horizontal"/>
+</FrameLayout>
